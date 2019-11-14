@@ -1,0 +1,8 @@
+<section class="test">
+  <div>
+    <%= for {key, value} <- @markdowns do %>
+      <h2><%= to_string(key) %></h2>
+      <%= value %>
+    <% end %>
+  </div>
+</section>
